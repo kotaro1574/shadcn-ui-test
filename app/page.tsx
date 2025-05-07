@@ -45,7 +45,7 @@ export default function Home() {
             setDeletedText("fruits deleted");
           }}
           variant="destructive"
-          className="w-full max-w-[180px]"
+          className="w-full max-w-[200px] mt-16"
         >
           delete
         </Button>
