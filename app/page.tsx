@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
+  SelectGroup,
   SelectItem,
   SelectTrigger,
   SelectValue,
@@ -31,11 +32,13 @@ export default function Home() {
             <SelectValue placeholder="fruits" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="apple🍎">Apple🍎</SelectItem>
-            <SelectItem value="banana🍌">Banana🍌</SelectItem>
-            <SelectItem value="orange🍊">Orange🍊</SelectItem>
-            <SelectItem value="pineapple🍍">Pineapple🍍</SelectItem>
-            <SelectItem value="strawberry🍓">Strawberry🍓</SelectItem>
+            <SelectGroup>
+              <SelectItem value="apple🍎">Apple🍎</SelectItem>
+              <SelectItem value="banana🍌">Banana🍌</SelectItem>
+              <SelectItem value="orange🍊">Orange🍊</SelectItem>
+              <SelectItem value="pineapple🍍">Pineapple🍍</SelectItem>
+              <SelectItem value="strawberry🍓">Strawberry🍓</SelectItem>
+            </SelectGroup>
           </SelectContent>
         </Select>
 
