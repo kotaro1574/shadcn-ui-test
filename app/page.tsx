@@ -14,6 +14,7 @@ import { useState } from "react";
 export default function Home() {
   const [selectedFruit, setSelectedFruit] = useState("");
   const [deletedText, setDeletedText] = useState("");
+  const [oopsText, setOopsText] = useState("");
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -26,6 +27,7 @@ export default function Home() {
           onValueChange={(value) => {
             setSelectedFruit(value);
             setDeletedText("");
+            setOopsText("");
           }}
         >
           <SelectTrigger className="w-[180px]">
@@ -47,12 +49,23 @@ export default function Home() {
             setSelectedFruit("");
             setDeletedText("fruits deleted");
           }}
+          type="button"
           variant="destructive"
-          className="w-full max-w-[200px] mt-16"
+          className="w-full max-w-[200px] mt-16 text-white"
         >
           delete
         </Button>
+
+        <Button
+          onClick={() => {
+            setOopsText("oops");
+          }}
+          type="button"
+        >
+          oops
+        </Button>
         {deletedText && <p className="text-sm text-red-500">{deletedText}</p>}
+        {oopsText && <p className="text-sm text-green-500">{oopsText}</p>}
       </div>
     </div>
   );
