@@ -51,7 +51,7 @@ export default function Home() {
           }}
           type="button"
           variant="destructive"
-          className="w-full max-w-[200px] mt-16 text-white"
+          className="w-full block mt-16 text-white"
         >
           delete
         </Button>
@@ -61,6 +61,7 @@ export default function Home() {
             setOopsText("oops");
           }}
           type="button"
+          className="block w-full"
         >
           oops
         </Button>
