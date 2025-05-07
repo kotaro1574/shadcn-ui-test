@@ -26,8 +26,6 @@ export default function Home() {
           value={selectedFruit}
           onValueChange={(value) => {
             setSelectedFruit(value);
-            setDeletedText("");
-            setOopsText("");
           }}
         >
           <SelectTrigger className="w-[180px]">
